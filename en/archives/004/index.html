@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="keywords" content="hygge, internet addiction, digital detox, smartphone addiction, internet, smartphones, addiction">
+  <meta name="description" content="Kur Med Alle is a website run by two high school students based in Japan, focusing on the Danish lifestyle Hygge as a cure to internet addiction.">
+  <meta name="author" content="Kur Med Alle">
+  <link rel="icon" type="image/vnd.microsoft.icon" href="../../logo.ico">
+  <link rel="stylesheet" href="../../../common.css">
+  <title>Causes and Effects of Internet Addiction | Kur Med Alle</title>
+  <style>
+    body {
+      background: white;
+    }
+
+    main,
+    footer {
+      transition: opacity .5s;
+      opacity: 0;
+    }
+
+    header>div#togglemenu>span {
+      background: black;
+    }
+
+    main>div#title {
+      display: flex;
+      height: 50vh;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    main>div#title>h1 {
+      font-size: 5em;
+    }
+
+    main>div#title>p {
+      font-size: 1.5em;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="menu" onclick="menuswitch()">
+    <small><span onclick="jump('../../../../archives/004')">JA</span> &nbsp;/&nbsp; <span style="opacity:.75">EN</span></small><br>
+    <span onclick="jump('../../')">Home</span><br>
+    <span onclick="jump('../../about')">About</span><br>
+    <span onclick="jump('../')" id="class">Archives</span><br>
+    <span onclick="jump('../../contact')">Contact</span>
+    <div>
+      <span onclick="jump('../001')">Causes and Effects of Internet Addiction</span><br>
+      <span onclick="jump('../002')">What is Hygge?</span><br>
+      <span onclick="jump('../003')">How is Hygge Effective Against Internet Addiction?</span><br>
+      <span onclick="scrolltotop()">Try Hygge</span><br>
+      <span onclick="jump('../005')">External Sources</span>
+    </div>
+  </div>
+  <header>
+    <div id="logo">
+      <img src="../../logo.svg" alt="" onclick="jump('../../')">
+    </div>
+    <div id="togglemenu" onclick="menuswitch()">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+
+  <main>
+    <div id="title">
+      <h1>Try <span style="color:#FCB626">Hygge</span>.</h1>
+      <p></p>
+    </div>
+    <section>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+        aute
+        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+        voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+        qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+        nisi
+        ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.
+      </p>
+    </section>
+  </main>
+
+
+  <footer style="color: grey">
+    &copy; 2021 Kur Med Alle
+  </footer>
+  <script type="text/javascript">
+    let menu = false;
+
+    setTimeout(function () {
+      document.querySelector('main').style.opacity = "1";
+      document.querySelector('footer').style.opacity = "1";
+    }, 150);
+
+    function menuswitch() {
+      if (menu) {
+        document.querySelector('header > div > span:nth-child(1)').style.transform = "rotate(0)";
+        document.querySelector('header > div > span:nth-child(2)').style.transform = "rotate(0)";
+        document.querySelector('header > div > span:nth-child(3)').style.width = "30px";
+        document.querySelector('header > div > span:nth-child(4)').style.width = "30px";
+        document.body.style.overflow = "auto";
+        document.querySelector('div#menu').className = "";
+        menu = false;
+        document.querySelector('header > div > span:nth-child(1)').style.background = "black";
+        document.querySelector('header > div > span:nth-child(2)').style.background = "black";
+        document.querySelector('header > div > span:nth-child(3)').style.background = "black";
+        document.querySelector('header > div > span:nth-child(4)').style.background = "black";
+      } else {
+        document.querySelector('header > div > span:nth-child(1)').style.transform = "rotate(45deg)";
+        document.querySelector('header > div > span:nth-child(2)').style.transform = "rotate(135deg)";
+        document.querySelector('header > div > span:nth-child(3)').style.width = "0";
+        document.querySelector('header > div > span:nth-child(4)').style.width = "0";
+        document.body.style.overflow = "hidden";
+        document.querySelector('div#menu').className = "activated";
+        menu = true;
+        document.querySelector('header > div > span:nth-child(1)').style.background = "white";
+        document.querySelector('header > div > span:nth-child(2)').style.background = "white";
+        document.querySelector('header > div > span:nth-child(3)').style.background = "white";
+        document.querySelector('header > div > span:nth-child(4)').style.background = "white";
+      }
+    }
+
+    function jump(link) {
+      if (link == "../../") {
+        if (menu) {
+          menuswitch();
+          document.body.style.transition = "none";
+          document.querySelector('main').style.visibility = "hidden";
+          document.querySelector('footer').style.visibility = "hidden";
+        } else {
+          document.querySelector('main').style.opacity = "0";
+          document.querySelector('footer').style.opacity = "0";
+        }
+        document.querySelector('header > div > span:nth-child(1)').style.background = "white";
+        document.querySelector('header > div > span:nth-child(2)').style.background = "white";
+        document.querySelector('header > div > span:nth-child(3)').style.background = "white";
+        document.querySelector('header > div > span:nth-child(4)').style.background = "white";
+        document.body.style.background = "black";
+        document.querySelector('header').style.opacity = "0";
+      } else {
+        document.body.style.background = "white";
+        document.querySelector('header > div > span:nth-child(1)').style.background = "black";
+        document.querySelector('header > div > span:nth-child(2)').style.background = "black";
+        document.querySelector('header > div > span:nth-child(3)').style.background = "black";
+        document.querySelector('header > div > span:nth-child(4)').style.background = "black";
+        document.querySelector('main').style.opacity = "0";
+        document.querySelector('footer').style.opacity = "0";
+      }
+      setTimeout(function() {
+        window.location.href = link;
+      }, 500);
+    }
+
+    function scrolltotop() {
+      if (menu) {
+        window.scrollTo(0, 0);
+        menuswitch();
+        setTimeout(function() {
+          menuswitch();
+        }, 200);
+      } else {
+        var position = document.documentElement.scrollTop || document.body.scrollTop,
+          i = 0,
+          interval = setInterval(function() {
+            if (i == 200) {
+              clearInterval(interval);
+            }
+            window.scrollTo(0, (position - position * (1 - Math.pow(1 - (i / 200), 3))));
+            i++;
+          }, 1);
+      }
+    }
+  </script>
+</body>
+
+</html>

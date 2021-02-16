@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="keywords" content="hygge, internet addiction, digital detox, smartphone addiction, internet, smartphones, addiction">
+  <meta name="description" content="Kur Med Alle is a website run by two high school students based in Japan, focusing on the Danish lifestyle Hygge as a cure to internet addiction.">
+  <meta name="author" content="Kur Med Alle">
+  <link rel="icon" type="image/vnd.microsoft.icon" href="logo.ico">
+  <link rel="stylesheet" href="../common.css">
+  <title>Home | Kur Med Alle</title>
+  <style>
+    body {
+      overflow: auto;
+      background: black;
+      animation: overflow 0s 2.5s backwards;
+    }
+
+    @keyframes overflow {
+      from {
+        overflow: hidden;
+      }
+      to{
+        overflow: auto;
+      }
+    }
+
+    main,
+    footer {
+      transition: opacity .5s;
+      opacity: 0;
+    }
+
+    header {
+      opacity: 0;
+      visibility: hidden;
+      animation: display .5s 2s forwards;
+    }
+
+    header>div#togglemenu>span {
+      background: white;
+    }
+
+    main>div:first-child {
+      color: white;
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    main>div:first-child>svg {
+      width: 100vw;
+      max-width: 1000px;
+      max-width: 95vw;
+      height: 31.7vw;
+      max-height: 317px;
+    }
+
+    main>div:first-child>p {
+      font-size: 1.5em;
+      opacity: 0;
+      animation: display .5s 2s forwards;
+    }
+
+    @keyframes display {
+      0%{
+        visibility: hidden;
+      }
+      1%{
+        visibility: visible;
+        opacity: 0;
+      }
+      100%{
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+
+    main > div:first-child > span {
+      background: white;
+      width: 1px;
+      bottom: 0;
+      position: absolute;
+      animation: scroll 2.5s 2.75s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+      transition: opacity .5s;
+    }
+
+    @keyframes scroll {
+      5%{
+        top: 85vh;
+        height: 0vh;
+      }
+      50%{
+        top: 85vh;
+        height: 15vh;
+      }
+      95%{
+        top: 100vh;
+        height: 0vh;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="menu" onclick="menuswitch()">
+    <small><span onclick="jump('../')">JA</span> &nbsp;/&nbsp; <span style="opacity:.75">EN</span></small><br>
+    <span onclick="scrolltotop()">Home</span><br>
+    <span onclick="jump('about')">About</span><br>
+    <span onclick="jump('archives')" id="class">Archives</span><br>
+    <span onclick="jump('contact')">Contact</span>
+    <div>
+      <span onclick="jump('archives/001')">Causes and Effects of Internet Addiction</span><br>
+      <span onclick="jump('archives/002')">What is Hygge?</span><br>
+      <span onclick="jump('archives/003')">How is Hygge Effective Against Internet Addiction?</span><br>
+      <span onclick="jump('archives/004')">Try Hygge</span><br>
+      <span onclick="jump('archives/005')">External Sources</span>
+    </div>
+  </div>
+  <header>
+    <div id="logo" onclick="scrolltotop()">
+      <img src="../logo.svg" alt="">
+    </div>
+    <div id="togglemenu" onclick="menuswitch()">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+
+  <main>
+    <div>
+      <svg xmlns='http://www.w3.org/2000/svg'
+         width="96"
+         height="96"
+         viewBox="0 0 80 25.4">
+        <defs
+           id="defs2">
+          <linearGradient
+             id="linearGradient1097">
+            <stop
+               style="stop-color:#000000;stop-opacity:1"
+               offset="0"
+               id="stop1081" />
+            <stop
+               style="stop-color:#fbcf3a;stop-opacity:0.98823529;"
+               offset="0.08372624"
+               id="stop1099" />
+            <stop
+               style="stop-color:#fdd991;stop-opacity:0.96470588"
+               offset="0.18638185"
+               id="stop1083" />
+            <stop
+               style="stop-color:#f8bf2e;stop-opacity:0.95294118"
+               offset="0.3571651"
+               id="stop1085" />
+            <stop
+               style="stop-color:#f58325;stop-opacity:0.96862745"
+               offset="0.50692165"
+               id="stop1087" />
+            <stop
+               style="stop-color:#e83048;stop-opacity:0.97254908"
+               offset="0.74202353"
+               id="stop1089" />
+            <stop
+               style="stop-color:#8a0f57;stop-opacity:0.97254908"
+               offset="0.9366473"
+               id="stop1091" />
+            <stop
+               style="stop-color:#5a0739;stop-opacity:0.97647059"
+               offset="0.97906846"
+               id="stop1093" />
+            <stop
+               style="stop-color:#200c45;stop-opacity:0.99607843"
+               offset="1"
+               id="stop1095" />
+          </linearGradient>
+          <linearGradient
+             id="linearGradient971">
+             <stop
+                style="stop-color:#000000;stop-opacity:0.99607843"
+                offset="0"
+                id="stop99" />
+             <stop
+                style="stop-color:#6d4a01;stop-opacity:0.99215686;"
+                offset="0.1429"
+                id="stop95" />
+            <stop
+                style="stop-color:#c0792e;stop-opacity:0.97647059"
+                offset="0.2857"
+                id="stop93" />
+            <stop
+               style="stop-color:#fc6126;stop-opacity:0.97254908"
+               offset="0.5"
+               id="stop963" />
+            <stop
+               style="stop-color:#c0792e;stop-opacity:0.97647059"
+               offset="0.7143"
+               id="stop973" />
+            <stop
+               style="stop-color:#6d4a01;stop-opacity:0.99215686;"
+               offset="0.8571"
+               id="stop975" />
+            <stop
+               style="stop-color:#000000;stop-opacity:0.99607843"
+               offset="1"
+               id="stop969" />
+          </linearGradient>
+          <linearGradient
+             xlink:href="#linearGradient1097"
+             id="linearGradient921"
+             gradientUnits="userSpaceOnUse"
+             x1="10.037429"
+             y1="24.569973"
+             x2="10.037429"
+             y2="106.214888"
+             gradientTransform="translate(0.22208122,-0.51527458)">
+             <animate attributeName="y1" values="24.569973;-0.18156183" dur="1.5s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines=".33 0 .25 1" id="fire" begin=".5s"/>
+             <animate attributeName="y2" values="106.214888;24.989973" dur="1.5s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines=".33 0 .25 1" begin="fire.begin"/>
+          <linearGradient/>
+          <linearGradient
+             xlink:href="#linearGradient971"
+             id="radialGradient936"
+             x1="30"
+             x2="30"
+             y1="35.663601"
+             y2="35.663601"
+             gradientUnits="userSpaceOnUse">
+             <animate attributeName="x1" values="30;-50" dur="2.5s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.33, 1, 0.68, 1" begin="fire.begin + 0.5s"/>
+             <animate attributeName="x2" values="30;115" dur="2.5s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.33, 1, 0.68, 1" begin="fire.begin + 0.5s"/>
+             <linearGradient/>
+        </defs>
+
+           <g
+              aria-label="Kur   edAlle"
+              id="text874"
+              style="fill:url(#radialGradient936);fill-opacity:1;stroke-width:0.264583">
+             <path
+             d="M 2.0753579,24.148956 V 14.047944 h 1.336696 v 5.009165 l 5.016054,-5.009165 h 1.8121181 l -4.2374623,4.09277 4.4234973,6.008242 H 8.6623749 L 5.0656985,19.036439 3.4120539,20.648742 v 3.500214 z"
+                style="fill:url(#radialGradient936);fill-opacity:1;stroke-width:0.264583"
+                id="path37" />
+             <path
+             d="m 16.179567,24.148956 v -1.074869 q -0.854384,1.240234 -2.321993,1.240234 -0.647678,0 -1.212673,-0.248047 -0.558105,-0.248047 -0.833712,-0.620117 -0.268717,-0.37896 -0.37896,-0.923285 -0.07579,-0.365179 -0.07579,-1.157551 v -4.533742 h 1.240233 v 4.058319 q 0,0.971517 0.07579,1.309136 0.117133,0.489203 0.496093,0.771701 0.378961,0.275607 0.937066,0.275607 0.558105,0 1.047308,-0.282498 0.489203,-0.289387 0.689018,-0.778591 0.206706,-0.496093 0.206706,-1.433158 v -3.920516 h 1.240233 v 7.317377 z"
+                style="fill:url(#radialGradient936);fill-opacity:1;stroke-width:0.264583"
+                id="path39" />
+             <path
+             d="m 19.218137,24.148956 v -7.317377 h 1.11621 v 1.10932 q 0.427192,-0.778591 0.785482,-1.026638 0.365179,-0.248046 0.799261,-0.248046 0.627007,0 1.274684,0.39963 l -0.427191,1.150661 q -0.454752,-0.268717 -0.909505,-0.268717 -0.406521,0 -0.730359,0.248047 -0.323839,0.241156 -0.461643,0.675238 -0.206705,0.661458 -0.206705,1.446939 v 3.830943 z"
+                style="fill:url(#radialGradient936);fill-opacity:1;stroke-width:0.264583"
+                id="path41" />
+             <path
+             d="m 42.289239,21.792513 1.281574,0.158474 q -0.303168,1.1231 -1.1231,1.743217 -0.819932,0.620117 -2.094616,0.620117 -1.605414,0 -2.549369,-0.985297 -0.937065,-0.992187 -0.937065,-2.776745 0,-1.846569 0.950845,-2.866317 0.950846,-1.019747 2.466687,-1.019747 1.467609,0 2.397784,0.999077 0.930176,0.999077 0.930176,2.811195 0,0.110243 -0.0069,0.330729 h -5.457027 q 0.0689,1.205783 0.682129,1.84657 0.613226,0.640787 1.529621,0.640787 0.682128,0 1.164441,-0.358289 0.482313,-0.35829 0.764811,-1.143771 z m -4.0721,-2.005044 h 4.08588 q -0.08268,-0.923285 -0.468532,-1.384928 -0.592556,-0.716579 -1.536512,-0.716579 -0.854383,0 -1.440049,0.571886 -0.578775,0.571885 -0.640787,1.529621 z"
+                style="fill:url(#radialGradient936);fill-opacity:1;stroke-width:0.264583"
+                id="path43" />
+             <path
+             d="m 49.875331,24.148956 v -0.923285 q -0.695908,1.08865 -2.046385,1.08865 -0.875053,0 -1.612303,-0.482313 -0.73036,-0.482313 -1.136881,-1.343586 -0.399631,-0.868164 -0.399631,-1.991264 0,-1.09554 0.36518,-1.984374 0.36518,-0.895724 1.09554,-1.371147 0.730359,-0.475422 1.632974,-0.475422 0.661457,0 1.178221,0.282497 0.516764,0.275608 0.840603,0.72347 v -3.624238 h 1.233343 v 10.101012 z m -3.920515,-3.651798 q 0,1.405598 0.592556,2.101507 0.592556,0.695908 1.398707,0.695908 0.813042,0 1.378037,-0.661458 0.571886,-0.668348 0.571886,-2.032604 0,-1.502061 -0.578776,-2.20486 -0.578775,-0.702799 -1.426268,-0.702799 -0.826822,0 -1.384927,0.675239 -0.551215,0.675238 -0.551215,2.129067 z"
+                style="fill:url(#radialGradient936);fill-opacity:1;stroke-width:0.264583"
+                id="path45" />
+             <path
+             d="m 54.141739,24.148956 3.879175,-10.101012 h 1.440048 l 4.134112,10.101012 h -1.522731 l -1.178222,-3.059242 h -4.223684 l -1.10932,3.059242 z m 2.914549,-4.147891 h 3.424422 l -1.054199,-2.797416 q -0.482313,-1.274684 -0.716579,-2.094616 -0.192925,0.971516 -0.544325,1.929252 z"
+                style="fill:url(#radialGradient936);fill-opacity:1;stroke-width:0.264583"
+                id="path47" />
+             <path
+             d="M 64.477019,24.148956 V 14.047944 h 1.240233 v 10.101012 z"
+                style="fill:url(#radialGradient936);fill-opacity:1;stroke-width:0.264583"
+                id="path49" />
+             <path
+             d="M 67.612052,24.148956 V 14.047944 h 1.240233 v 10.101012 z"
+                style="fill:url(#radialGradient936);fill-opacity:1;stroke-width:0.264583"
+                id="path51" />
+             <path
+             d="m 75.78381,21.792513 1.281574,0.158474 q -0.303168,1.1231 -1.1231,1.743217 -0.819932,0.620117 -2.094616,0.620117 -1.605414,0 -2.549369,-0.985297 -0.937065,-0.992187 -0.937065,-2.776745 0,-1.846569 0.950845,-2.866317 0.950846,-1.019747 2.466687,-1.019747 1.467609,0 2.397784,0.999077 0.930176,0.999077 0.930176,2.811195 0,0.110243 -0.0069,0.330729 h -5.457027 q 0.0689,1.205783 0.682129,1.84657 0.613226,0.640787 1.529621,0.640787 0.682128,0 1.164441,-0.358289 0.482313,-0.35829 0.764811,-1.143771 z m -4.0721,-2.005044 h 4.08588 q -0.08268,-0.923285 -0.468532,-1.384928 -0.592556,-0.716579 -1.536512,-0.716579 -0.854383,0 -1.440049,0.571886 -0.578775,0.571885 -0.640787,1.529621 z"
+                style="fill:url(#radialGradient936);fill-opacity:1;stroke-width:0.264583"
+                id="path53" />
+           </g>
+          <path
+             style="fill:none;stroke:url(#linearGradient921);stroke-width:1.25;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1"
+             d="m 28.47796,23.71008 c -4.034375,-5.442843 1.147218,-5.509176 0.252448,-13.467756 0.297353,2.538215 0.420106,5.426502 2.80633,5.980156 1.30731,-7.1120045 -2.758053,-9.6854149 -0.451017,-14.5327811 -1.1486,6.9973535 7.070556,10.2763291 2.380615,22.0055591"
+             id="path24"
+             />
+      </svg>
+      <p><span style="color:#CFA95A">Hygge</span> <span style="color:#AD9983">for digital detox.</span></p>
+      <span></span>
+    </div>
+    <section>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+      irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur
+      adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+      nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+      aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+      nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+      qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+      ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+      laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet,
+      consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+      in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+      eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+      dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+      sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+      sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+      ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+      mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum
+      dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+      in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing
+      elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+      ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+  </section>
+  </main>
+
+
+  <footer style="color: grey">
+    &copy; 2021 Kur Med Alle
+  </footer>
+  <script type="text/javascript">
+    let menu = false;
+
+    setTimeout(function () {
+      window.scrollTo(0,0);
+    }, 25);
+
+    setTimeout(function () {
+      document.querySelector('main').style.opacity = "1";
+      document.querySelector('footer').style.opacity = "1";
+    }, 150);
+
+    function menuswitch() {
+      if (menu) {
+        document.querySelector('header > div > span:nth-child(1)').style.transform = "rotate(0)";
+        document.querySelector('header > div > span:nth-child(2)').style.transform = "rotate(0)";
+        document.querySelector('header > div > span:nth-child(3)').style.width = "30px";
+        document.querySelector('header > div > span:nth-child(4)').style.width = "30px";
+        document.body.style.overflow = "auto";
+        document.querySelector('div#menu').className = "";
+        menu = false;
+        if (document.querySelector('main > div >p').offsetTop + document.querySelector('main > div >p').offsetHeight < document.documentElement.scrollTop || document.body.scrollTop) {
+          document.querySelector('header > div > span:nth-child(1)').style.background = "black";
+          document.querySelector('header > div > span:nth-child(2)').style.background = "black";
+          document.querySelector('header > div > span:nth-child(3)').style.background = "black";
+          document.querySelector('header > div > span:nth-child(4)').style.background = "black";
+        }
+      } else {
+        document.querySelector('header > div > span:nth-child(1)').style.transform = "rotate(45deg)";
+        document.querySelector('header > div > span:nth-child(2)').style.transform = "rotate(135deg)";
+        document.querySelector('header > div > span:nth-child(3)').style.width = "0";
+        document.querySelector('header > div > span:nth-child(4)').style.width = "0";
+        document.body.style.overflow = "hidden";
+        document.querySelector('div#menu').className = "activated";
+        menu = true;
+        document.querySelector('header > div > span:nth-child(1)').style.background = "white";
+        document.querySelector('header > div > span:nth-child(2)').style.background = "white";
+        document.querySelector('header > div > span:nth-child(3)').style.background = "white";
+        document.querySelector('header > div > span:nth-child(4)').style.background = "white";
+      }
+    }
+
+    function jump(link) {
+      document.querySelector('main').style.opacity = "0";
+      document.querySelector('footer').style.opacity = "0";
+      if (link == "../") {
+        document.body.style.transition = "none";
+        document.body.style.background = "black";
+        setTimeout(function () {
+          document.querySelector('header > div > span:nth-child(1)').style.background = "white";
+          document.querySelector('header > div > span:nth-child(2)').style.background = "white";
+          document.querySelector('header > div > span:nth-child(3)').style.background = "white";
+          document.querySelector('header > div > span:nth-child(4)').style.background = "white";
+        }, 10);
+      }else {
+        document.body.style.background = "white";
+        document.querySelector('header > div > span:nth-child(1)').style.background = "black";
+        document.querySelector('header > div > span:nth-child(2)').style.background = "black";
+        document.querySelector('header > div > span:nth-child(3)').style.background = "black";
+        document.querySelector('header > div > span:nth-child(4)').style.background = "black";
+      }
+      setTimeout(function() {
+        window.location.href = link;
+      }, 500);
+    }
+
+    function scrolltotop() {
+      if (menu) {
+        window.scrollTo(0, 0);
+        menuswitch();
+        setTimeout(function() {
+          menuswitch();
+        }, 200);
+      } else {
+        var position = document.documentElement.scrollTop || document.body.scrollTop,
+          i = 0,
+          interval = setInterval(function() {
+            if (i == 200) {
+              clearInterval(interval);
+            }
+            window.scrollTo(0, (position - position * (1 - Math.pow(1 - (i / 200), 3))));
+            i++;
+          }, 1);
+      }
+    }
+
+
+    window.onscroll = function() {
+      document.querySelector('main > div:first-child > span').style.opacity = 0;
+      if (document.querySelector('main > div >p').offsetTop + document.querySelector('main > div >p').offsetHeight < document.documentElement.scrollTop || document.body.scrollTop) {
+        document.body.style.background = "white";
+        document.querySelector('header > div > span:nth-child(1)').style.background = "black";
+        document.querySelector('header > div > span:nth-child(2)').style.background = "black";
+        document.querySelector('header > div > span:nth-child(3)').style.background = "black";
+        document.querySelector('header > div > span:nth-child(4)').style.background = "black";
+      } else {
+        document.body.style.background = "black";
+        document.querySelector('header > div > span:nth-child(1)').style.background = "white";
+        document.querySelector('header > div > span:nth-child(2)').style.background = "white";
+        document.querySelector('header > div > span:nth-child(3)').style.background = "white";
+        document.querySelector('header > div > span:nth-child(4)').style.background = "white";
+      }
+    }
+  </script>
+</body>
+
+</html>
